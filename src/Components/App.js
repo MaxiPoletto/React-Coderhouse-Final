@@ -1,17 +1,20 @@
 
-import ItemsListContainer from "./ItemsListContainer";
 import Navbar from "./Navbar";
+import Main from "./Main";
+import { BrowserRouter } from "react-router-dom";
 
 
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <ItemsListContainer greeting="Holaaa"/>
-
+      <BrowserRouter>
+        <Navbar/>
+        <Main/>
+      </BrowserRouter>
+      
     </>
- 
+  
   );
 }
 
