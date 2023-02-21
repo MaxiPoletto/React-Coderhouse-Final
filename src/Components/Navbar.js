@@ -6,12 +6,12 @@ const Navbar =()=>{
         <nav>
             <Link class="nav-tittle" to="/">ANANTA</Link>
             <div class="nav-cont">
-                <Link to="category/electronics" class="nav-cont-link">electronics</Link>
-                <Link to="category/men's clothing" class="nav-cont-link">men's clothing</Link>
-                <Link to="category/women's clothing" class="nav-cont-link">women's clothing</Link>
-                <Link to="category/jewelery" class="nav-cont-link">jewelery</Link>
+                <Link to="/categoria/cursos" class="nav-cont-link">cursos</Link>
+                <Link to="/categoria/canastos" class="nav-cont-link">canastos</Link>
+                <Link to="/categoria/alfombras" class="nav-cont-link">alfombras</Link>
+                <Link to="/categoria/carteras" class="nav-cont-link">carteras</Link>
             </div>
-            <CartWidget/>
+            <Link to="/cart"><CartWidget/></Link>
         </nav>
         
     )

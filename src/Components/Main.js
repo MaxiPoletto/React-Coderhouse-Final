@@ -1,7 +1,7 @@
 import ItemDetailContainer from "./ItemDetailContainer";
 import ItemsListContainer from "./ItemsListContainer";
 import { Route, Routes } from "react-router-dom";
-
+import Cart from "./Cart"
 
 const Main=()=>{
 
@@ -9,9 +9,10 @@ const Main=()=>{
         <div class="main">
             <Routes>
                 <Route path="/"element={<ItemsListContainer/>}/>
-                <Route path="/category/:categoryId" element={<ItemsListContainer greeting="Holaaa"/>}/>
+                <Route path="/categoria/:categoryId" element={<ItemsListContainer/>}/>
                 <Route path="/item/:id"element={<ItemDetailContainer/>}/>
-                {/* <Route path="" element={}/> */}
+                <Route path="/cart"element={<Cart/>}/>
+               
             </Routes>
             
         </div>

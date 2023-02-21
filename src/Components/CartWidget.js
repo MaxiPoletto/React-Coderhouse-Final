@@ -1,11 +1,23 @@
-
+import { NavLink } from "react-router-dom";
+import { useCart } from "./CustomProvider";
 
 const CartWidget=()=>{
+    const {totalProducto} = useCart()
+    
+
     return(
-        <>
-           <span class="material-icons">shopping_cart<span class="cart_count">0</span></span>
-        </>
+
+        <NavLink to="/cart">
+            <span className="material-icons">shopping_cart</span>
+            <span>{totalProducto()}</span>
+        </NavLink>
+       
     )
 }
 
 export default CartWidget;
+
+
+
+
+
